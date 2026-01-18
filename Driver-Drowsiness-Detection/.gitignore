@@ -1,0 +1,6 @@
+.env
+/Data
+/__pycache__
+/Models
+/Logs
+*tmp*

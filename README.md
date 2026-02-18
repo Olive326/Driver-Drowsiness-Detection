@@ -3,6 +3,9 @@ A real-time driver drowsiness detection system that combines **Convolutional Neu
 
 ## Detection Method
 ### **1. CNN (Convolutional Neural Network)**
+CNN is widely used in image feature extraction and pattern recognition; It could detect subtle changes in a driver's facial expression(closed eyes, yawning, head titlting); It could handle variations in lighting conditions, filming angles.
+<img width="466" height="275" alt="image" src="https://github.com/user-attachments/assets/308dc3f7-8b05-4e1d-95ca-09eee73523f0" />
+
 
 ### **2. EAR (Eye Aspect Ratio)** 
 
@@ -15,7 +18,7 @@ A real-time driver drowsiness detection system that combines **Convolutional Neu
 ## Dataset
 ### **Drowsiness Prediction Dataset**
 - This dataset includes 4560 Active Subjects and 4560 Fatigue Subjects.
-- reference: (https://www.kaggle.com/datasets/rakibuleceruet/drowsiness-prediction-dataset/data)
+- link: (https://www.kaggle.com/datasets/rakibuleceruet/drowsiness-prediction-dataset/data)
 
 ### **Data Preprocessing**
 

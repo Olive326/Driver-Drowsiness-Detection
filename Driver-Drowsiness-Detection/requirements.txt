@@ -1,11 +1,6 @@
-av
-mediapipe
-opencv-python-headless
-numpy
-scikit-learn
-tensorflow-cpu
-argparse
-python-dotenv
-datetime
-streamlit
-streamlit_webrtc
+numpy==1.24.3
+opencv-python-headless==4.8.0.74
+scipy==1.10.1
+imutils==0.5.4
+dlib==19.24.2
+tensorflow==2.13.0

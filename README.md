@@ -13,14 +13,24 @@ A real-time driver drowsiness detection system that combines **Convolutional Neu
 - Improved accuracy and reduced false positives
 
 ## Dataset
-- **Drowsiness Prediction Dataset**
-This dataset includes 4560 Active Subjects and 4560 Fatigue Subjects.
+### **Drowsiness Prediction Dataset**
+- This dataset includes 4560 Active Subjects and 4560 Fatigue Subjects.
+- reference: (https://www.kaggle.com/datasets/rakibuleceruet/drowsiness-prediction-dataset/data)
 
-- **Data Preprocessing**
-  facial landmark detector(pretrained)
-  regions of interests extraction
-  CNN ready dataset
-reference: (https://www.kaggle.com/datasets/rakibuleceruet/drowsiness-prediction-dataset/data)
+### **Data Preprocessing**
+
+#### Image Rescaling and Augmentation
+- Reascaling: Normalize pixel values to [0,1]
+- Augmentation: Random zoom, flip, rotation, translation, shear and brightness
+- Purpose: Boost model generalization and robustness
+  
+#### Face Landmark Detection with Dlib
+- Used shape_predictor_68_landmarks.dat to detect 68 facial landmarks
+- Helps in:
+-  Face alignment
+-  Feature extraction(eyes, mouth, jawline, etc)
+-  Preprocessing input for expression recognition, pose estimation. etc
+
 
 ## Results
 - **Results Comparison**

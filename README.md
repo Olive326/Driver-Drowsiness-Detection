@@ -54,11 +54,10 @@ Sigmoid: Outputs probability between 0 and 1
 ## Results
 - **Results Comparison**
 CNN-tflite+EAR2:
-- closed eyes detect
-  
-- fatigue detect
+- closed eyes detect  
+- fatigue detect(2s)
 ![IMB_j816ie](https://github.com/user-attachments/assets/c327d7a0-d2e0-433c-b351-f10f48624063)
-
+Video Demo:(https://drive.google.com/file/d/11aNNPDIpcoKXOtF-aOYugxB5BTcFCzQn/view?usp=drive_link)
 ## Deployment On Raspberry Pi
 convert model file to Tflite version
 

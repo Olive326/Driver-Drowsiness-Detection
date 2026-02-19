@@ -57,6 +57,7 @@ CNN-tflite+EAR2:
 - closed eyes detect
   
 - fatigue detect
+![IMB_j816ie](https://github.com/user-attachments/assets/c327d7a0-d2e0-433c-b351-f10f48624063)
 
 ## Deployment On Raspberry Pi
 convert model file to Tflite version

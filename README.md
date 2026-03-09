@@ -2,7 +2,17 @@
 A real-time driver drowsiness detection system that combines **Convolutional Neural Network (CNN)** and **Eye Aspect Ratio (EAR)** method to monitor driver alertness and prevent accidents caused by fatigue.
 
 ## Detection Method
-### **1. CNN (Convolutional Neural Network)**
+**Pipeline:**
+- Face Detection (Dlib HOG) — locates face bounding box per frame
+- Landmark Extraction (shape_predictor_68) — extracts 68 facial keypoints
+- EAR Computation — calculates Eye Aspect Ratio from eye landmarks (points 36-48)
+- CNN (auxiliary) — trained 4-layer CNN for face-level fatigue classification, implemented as an alternative decision module
+- Drowsiness Decision — alert triggers when EAR < 0.2 for ≥ 60 consecutive frames
+
+### **1. Landmark Extraction (shape_predictor_68)**
+A pre-trained Dlib landmark detector that locates 68 facial keypoints. I chose it specifically because it reliably identifies the six eye landmark points needed to compute Eye Aspect Ratio
+
+### **2. CNN (Convolutional Neural Network)**
 CNN is widely used in image feature extraction and pattern recognition; It could detect subtle changes in a driver's facial expression(closed eyes, yawning, head titlting); It could handle variations in lighting conditions, filming angles.
 The general pattern 
 
@@ -21,7 +31,7 @@ Dropout: Randomly turns off neurons during training to prevent overfitting
 Dense: Fully connected layers that combine all features to make a decision
 Sigmoid: Outputs probability between 0 and 1
 
-### **2. EAR (Eye Aspect Ratio)** 
+### **3. EAR (Eye Aspect Ratio)** 
 <img width="436" height="175" alt="image" src="https://github.com/user-attachments/assets/d12e1948-edef-4c6a-8591-109accb9cd39" />
 - Hard fatigue-state EAR threshold: EAR < 0.2 for more than 20 frames --- Fatigue!
 - Adaptive fatigue-state EAR threshold: EAR < 0.4 normal-state EAR for more than 20 frames --- Fatigue!

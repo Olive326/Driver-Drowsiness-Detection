@@ -75,8 +75,11 @@ CNN-tflite+EAR2:
 
 Video Demo:(https://drive.google.com/file/d/11aNNPDIpcoKXOtF-aOYugxB5BTcFCzQn/view?usp=drive_link)
 ## Deployment On Raspberry Pi
-convert model file to Tflite version
-Trigger the LED alert system once eyes closes
+- convert model file to Tflite version
+- Trigger the LED alert system once eyes closes
+LED Alert system:
+
+![c2f3ca4915dc3ae429b6dde1f26a6045](https://github.com/user-attachments/assets/93f26222-c7f7-4607-a6fe-c3b20818f165)
 
 Video Demo:(https://drive.google.com/file/d/1EcbvkwRguwlXF2jNGFdawNOyc6159gaU/view?usp=drive_link)
 

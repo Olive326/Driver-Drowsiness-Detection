@@ -32,7 +32,10 @@ Dense: Fully connected layers that combine all features to make a decision
 Sigmoid: Outputs probability between 0 and 1
 
 ### **3. EAR (Eye Aspect Ratio)** 
+
 <img width="436" height="175" alt="image" src="https://github.com/user-attachments/assets/d12e1948-edef-4c6a-8591-109accb9cd39" />
+
+
 - Hard fatigue-state EAR threshold: EAR < 0.2 for more than 20 frames --- Fatigue!
 - Adaptive fatigue-state EAR threshold: EAR < 0.4 normal-state EAR for more than 20 frames --- Fatigue!
 
@@ -66,10 +69,16 @@ Sigmoid: Outputs probability between 0 and 1
 CNN-tflite+EAR2:
 - closed eyes detect  
 - fatigue detect(2s)
+  
 ![IMB_j816ie](https://github.com/user-attachments/assets/c327d7a0-d2e0-433c-b351-f10f48624063)
+
+
 Video Demo:(https://drive.google.com/file/d/11aNNPDIpcoKXOtF-aOYugxB5BTcFCzQn/view?usp=drive_link)
 ## Deployment On Raspberry Pi
 convert model file to Tflite version
+Trigger the LED alert system once eyes closes
+
+Video Demo:(https://drive.google.com/file/d/1EcbvkwRguwlXF2jNGFdawNOyc6159gaU/view?usp=drive_link)
 
 
 

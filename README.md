@@ -6,7 +6,7 @@ A real-time driver drowsiness detection system that combines **Convolutional Neu
 - Face Detection (Dlib HOG) — locates face bounding box per frame
 - Landmark Extraction (shape_predictor_68) — extracts 68 facial keypoints
 - EAR Computation — calculates Eye Aspect Ratio from eye landmarks (points 36-48)
-- CNN (auxiliary) — trained 4-layer CNN for face-level fatigue classification, implemented as an alternative decision module
+- CNN (auxiliary) — trained CNN for face-level fatigue classification, implemented as an alternative decision module
 - Drowsiness Decision — alert triggers when EAR < 0.2 for ≥ 60 consecutive frames
 
 ### **1. Landmark Extraction (shape_predictor_68)**
